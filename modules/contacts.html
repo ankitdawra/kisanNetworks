@@ -1,0 +1,17 @@
+<div class="contacts">
+	<div class="contact-wrap" ng-repeat="contact in contacts">
+		<span class="pic"><img src="{{contact.pic}}"></span>
+		<span class="name">{{contact.fname}}</span>
+		<span class="name">{{contact.lname}}</span>
+		<div class="open-profile-div" data-ng-click="openUser(contact)">
+			<div class="wrapper">
+				<div class="user-bg" style="background: url({{contact.pic}})"></div>
+				<div class="user-overlay"></div>
+				<div class="view">
+					<span class="icon"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span>
+					<span>View Profile</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

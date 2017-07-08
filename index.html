@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html data-ng-app="app" data-ng-controller="BaseCtrl">
+    <head>
+        <title>Kisan Network</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="icon" type="image/png" href="./img/logo.png" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/lib/bootstrap.min.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="css/custom-responsive.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="css/lib/toastr.scss" />
+
+    </head>
+
+    <body>
+        <header class="fixedHeader" data-ng-include data-src="'modules/header.html'"></header>
+
+        <section>
+                <div class="section">
+                    <div class="main-container">
+                        <div data-ui-view></div>
+                    </div>
+                </div>
+        </section>
+
+        <div class="footer" data-ng-class="{'fixFooter':currentState.name != 'contacts'}" data-ng-include data-src="'modules/footer.html'"></div>
+    
+	    <footer>
+	        <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	        <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	        <script type="text/javascript" src="js/lib/angular.min.js"></script>
+            <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
+            <script type="text/javascript" src="js/lib/angular-ui-route.min.js"></script>
+	        <script type="text/javascript" src="js/lib/ui-bootstrap-tpls.min.js"></script>
+            <script type="text/javascript" src="js/lib/toastr.js"></script>
+
+	        <script>var App = angular.module('app', ['ngRoute','ui.router','ui.bootstrap']);</script>
+
+            <script src="js/controllers/BaseCtrl.js"></script>
+            <script src="js/controllers/SendMsgCtrl.js"></script>
+            <script src="js/controllers/UserCtrl.js"></script>
+            <script src="js/controllers/MsgCtrl.js"></script>
+            <script src="js/route.js"></script>
+            <script src="js/services/baseService.js"></script>
+	        
+	    </footer>
+	</body>    
+</html>

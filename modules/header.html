@@ -1,0 +1,24 @@
+<div class="header">
+	<div class="container">
+		<div class="logo" data-ng-click="openContacts()"><img src="./img/logo.png" height="25px"> Kisan Network</div>
+		<div class="menu">
+			<span class="about">About Us</span>
+			<span class="user"><i class="fa fa-user-o alignInMiddle" aria-hidden="true"></i></span>
+		</div>
+	</div>
+</div>
+
+<div class="subHeader">
+	<div class="container">
+		<div class="subHeader-menu">
+			<span data-ng-class="{'highlight': currentState.name == 'contacts'}" data-ng-click="openContacts()">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+				<span>Contacts</span>
+			</span>
+			<span data-ng-class="{'highlight': currentState.name == 'messages'}" data-ng-click="openMessages()">
+				<i class="fa fa-info" aria-hidden="true"></i>
+				<span>Messages</span>
+			</span>
+		</div>
+	</div>
+</div>

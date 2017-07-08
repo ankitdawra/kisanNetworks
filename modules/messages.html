@@ -1,0 +1,20 @@
+<div class="msgsSentWrap">
+	<div class="heading">Messages sent</div>
+	<table class="table-wrap">
+		<tr class="table-heading">
+			<td >Name</td>
+			<td>Message</td>
+			<td>OTP</td>
+			<td>Time</td>
+		</tr>
+		<tr class="msg-data" data-ng-repeat="msgData in messages">
+			<td class="username" data-ng-click="openUser(msgData.u_data)">{{msgData.u_data.fname}} {{msgData.u_data.lname}}</td>
+			<td>{{msgData.message}}</td>
+			<td>{{msgData.otp}}</td>
+			<td>{{msgData.addedOn}}</td>
+		</tr>
+	</table>
+	<div data-ng-if="!messages.length" class="no-msgs">
+		<span>No messages sent.</span>
+	</div>
+</div>

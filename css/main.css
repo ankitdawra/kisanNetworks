@@ -1,0 +1,77 @@
+.body{font-size: 12px;}
+header{position: fixed;width: 100%;top: 0px;z-index: 1}
+
+.alignInMiddle{position: absolute !important; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+
+.section{height: 100%; width: 60%; margin: auto; position: relative;}
+.main-container{margin: 120px 0;}
+
+.header{width: 100%; height: 50px; background: #FFF; line-height: 50px;}
+.header .logo{position: absolute; left: 0px; font-size: 15px; color: #007ee5;cursor: pointer;}
+.header .logo img{margin-right: 10px;}
+.header .menu{position: absolute; right:  0px;}
+.header .menu .about{font-size: 13px;}
+.header .menu .user{color: blue; display: inline-block; border: 1px solid rgba(0, 0, 255, 0.43); border-radius: 50%; margin-left: 10px; height: 25px; width: 25px; vertical-align: middle; position: relative;}
+
+.container{width: 97%; height: 100%; margin: auto; position: relative;}
+.subHeader{width: 100%; height: 50px; line-height: 50px; background: rgb(122, 158, 106); color: #FFF;}
+.subHeader .subHeader-menu{position: absolute;left: 0px;}
+.subHeader .subHeader-menu span{cursor: pointer;display: inline-block; padding: 0 10px;}
+.subHeader .subHeader-menu span:hover{background: rgba(103, 134, 89, 0.22);}
+.subHeader .subHeader-menu .highlight{background: rgb(103, 134, 89); box-shadow: 0 0 1px rgba(0, 0, 0, 0.11);}
+
+
+.contacts .contact-wrap{position: relative; cursor: pointer; padding: 10px; background: #FFF; box-shadow: 0 0 1px rgba(0, 0, 0, 0.57); margin: 10px 0px; border-radius: 4px;}
+.contacts .contact-wrap:hover{box-shadow: 0 0 2px #000;background: rgba(255, 255, 255, 0.8);}
+.contacts .contact-wrap .pic{margin-right: 15px;font-size: 25px; color: #9E9E9E;}
+.contacts .contact-wrap .pic img{height: 90px;}
+.contacts .contact-wrap .name{font-size: 18px; letter-spacing: .6px;}
+.contacts .contact-wrap .open-profile-div{position: absolute; right: 0px; height: 100%; width: 130px; top: 0px; overflow: hidden;}
+.contacts .contact-wrap .open-profile-div .wrapper{height: 100%; width: 100%; position: relative;}
+.contacts .contact-wrap .open-profile-div .wrapper .user-bg{height: 100%; width: 100%; position: absolute; background-size: cover; -webkit-filter: blur(3px);}
+.contacts .contact-wrap .open-profile-div .wrapper .user-overlay{position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.14);}
+.contacts .contact-wrap .open-profile-div .wrapper .view{color: #FFF; font-size: 12px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; text-align: center; font-weight: bold;}
+.contacts .contact-wrap .open-profile-div .wrapper .view .icon{font-size: 18px;display: block;margin-bottom: 5px;}
+
+.userDiv .wrapper{padding: 20px; background: #fff; border-radius: 5px;position: relative;}
+.userDiv .wrapper .pic{margin-right: 10px;display: inline-block;}
+.userDiv .wrapper .pic img{height: 110px;}
+.userDiv .wrapper .meta{position: relative;height: 110px; display: inline-block; vertical-align: top; width: 50%; overflow: hidden; text-overflow: ellipsis;}
+.userDiv .wrapper .meta .name{font-size: 25px;}
+.userDiv .wrapper .meta .phone{position: absolute; left: 0px; bottom: 0px; padding: 10px 23px; background: rgba(0, 0, 0, 0.42); color: #FFF; border-radius: 3px;}
+.userDiv .wrapper .meta .phone i{margin-right: 5px;}
+.userDiv .wrapper .send{position: absolute; right: 10px; bottom: 20px; padding: 10px; font-size: 14px; cursor: pointer; background: rgba(103, 96, 96, 0.78); color: #FFF; border-radius: 4px; font-weight: bold;}
+
+.footer .footer-wrap{background:lightgrey; color: #000; text-align: center;height: 50px; line-height:50px; font-size: 13px;}
+.footer .footer-wrap .main{width: 90%; margin: auto;}
+.footer .footer-wrap .main .info{float: left;text-transform: capitalize;}
+.footer .footer-wrap .main .info .kisan{text-transform: uppercase; color: #177ee8;}
+.footer .footer-wrap .main .logo{position: relative;right: 5%;font-size: 15px; color: #007ee5;}
+.footer .footer-wrap .main .social-btns{float: right;}
+.footer .footer-wrap .main .social-btns .social-wrap{position: relative;top:13px;}
+.footer .footer-wrap .main .social-btns .icon{display: inline-block; width: 25px; height: 25px; background: rgba(255, 255, 255, 0.77); border-radius: 50%; position: relative; vertical-align: top;}
+.footer .footer-wrap .main .social-btns .icon i{color: #000;}
+
+.fixFooter{position: fixed; width: 100%; bottom: 0px;}
+
+.sendMsgModal{padding: 50px; font-weight: bold;}
+.sendMsgModal .close-btn{position: absolute; right: 0px; top: 0px; font-size: 16px; padding: 10px; cursor: pointer; color: rgba(118, 118, 118, 0.54);}
+.sendMsgModal .close-btn:hover{color:gray;}
+.sendMsgModal .user{font-size: 14px; margin-bottom: 30px; border-bottom: 1px solid rgba(118, 118, 118, 0.11); padding-bottom: 20px; font-weight: bold;}
+.sendMsgModal .msg{font-size: 16px; width: 20%; display: inline-block;}
+.sendMsgModal .input-wrap{display: inline-block; width: 70%;}
+.sendMsgModal .input-wrap input{padding: 10px; border: 2px solid; width: 100%;}
+.sendMsgModal .input-wrap input:focus{outline: none;}
+.sendMsgModal .send-wrap{position: relative; margin-top: 20px;}
+.sendMsgModal .send-wrap .sendbtn{cursor: pointer; display: inline-block; background: #767676; padding: 7px 25px; color: #FFF; font-size: 15px; border-radius: 4px;}
+.sendMsgModal .send-wrap img{height: 42px; position: absolute; top: 50%; transform: translate(0,-50%);}
+
+.msgsSentWrap{padding: 20px; background: #FFF; border-radius: 4px; box-shadow: 0 0 1px #000;margin-bottom: 70px;}
+.msgsSentWrap .heading{font-size: 16px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid rgba(0, 0, 0, 0.25);}
+.msgsSentWrap .table-wrap{width: 100%;}
+.msgsSentWrap .table-wrap .table-heading{background: rgba(158, 158, 158, 0.94); color: #FFF; margin-bottom: 10px;}
+.msgsSentWrap .table-wrap .table-heading td{padding: 10px;}
+.msgsSentWrap .table-wrap .msg-data td{padding: 10px;max-width: 100px; word-wrap: break-word;}
+.msgsSentWrap .table-wrap .msg-data .username{cursor: pointer;}
+
+.msgsSentWrap .no-msgs{padding: 20px; text-align: center; font-size: 13px; font-weight: bold; margin-top: 15px;}

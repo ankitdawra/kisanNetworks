@@ -1,0 +1,12 @@
+<div class="sendMsgModal">
+	<div class="close-btn" data-ng-click="closeSendMsgModal()"><i class="fa fa-times"></i></div>
+	<div class="user">Sending message to {{user.fname}}</div>
+	<div>
+		<span class="msg">Message :</span>
+		<span class="input-wrap"><input type="text" value="{{message}}" readonly/></span>
+	</div>
+	<div class="send-wrap" data-ng-click="sendMsg()">
+		<div class="sendbtn">Send</div>
+		<img class="loader" src="./img/loader.gif" data-ng-if="loader">
+	</div>
+</div>
